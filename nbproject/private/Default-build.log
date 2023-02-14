@@ -1,0 +1,20 @@
+/usr/bin/gmake  all-recursive
+gmake[1]: Entering directory `/home/admin/NetBeansProjects/AI'
+Making all in src
+gmake[2]: Entering directory `/home/admin/NetBeansProjects/AI/src'
+/usr/bin/gcc -DHAVE_CONFIG_H -I. -I..    -Wall -export-dynamic -g3 -gdwarf-2 -MT neuron-main.o -MD -MP -MF .deps/neuron-main.Tpo -c -o neuron-main.o `test -f 'main.c' || echo './'`main.c
+mv -f .deps/neuron-main.Tpo .deps/neuron-main.Po
+/usr/bin/gcc -DHAVE_CONFIG_H -I. -I..    -Wall -export-dynamic -g3 -gdwarf-2 -MT neuron-neuron.o -MD -MP -MF .deps/neuron-neuron.Tpo -c -o neuron-neuron.o `test -f 'neuron.c' || echo './'`neuron.c
+neuron.c: In function ‘neuron_get’:
+neuron.c:56: warning: assignment makes integer from pointer without a cast
+neuron.c: At top level:
+neuron.c:116: error: conflicting types for ‘DoSuperMethod’
+neuron.h:56: note: previous declaration of ‘DoSuperMethod’ was here
+neuron.c: In function ‘DoSuperMethod’:
+neuron.c:118: error: switch quantity not an integer
+neuron.c:125: warning: format ‘%d’ expects type ‘int’, but argument 2 has type ‘int *’
+gmake[2]: *** [neuron-neuron.o] Error 1
+gmake[2]: Leaving directory `/home/admin/NetBeansProjects/AI/src'
+gmake[1]: *** [all-recursive] Error 1
+gmake[1]: Leaving directory `/home/admin/NetBeansProjects/AI'
+gmake: *** [all] Error 2
